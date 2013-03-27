@@ -1,0 +1,35 @@
+<h1>News</h1>
+<% @news.each do |news| %>
+<h2><%= news.title %></h2>
+<p><%= news.body %></p>
+<%= image_tag news.image_url.to_s %>
+<hr>
+<% end %>
+<h1>Events</h1>
+<% @events.each do |event| %>
+<h2><%= event.title %></h2>
+<p><%= event.date %></p>
+<% end %>
+<hr>
+
+<h1>Jobs</h1>
+<% @jobs.each do |job| %>
+<h2><%= job.title %></h2>
+<p>
+	<%= job.employer %><br>
+	<%= job.practice_area %>
+</p>
+<hr>
+
+<% end %>
+<h1>Public Interest News</h1>
+<% @publics.each do |public| %>
+<h2><%= public.title %></h2>
+<p><%= public.body %></p>
+<hr>
+<% end %>
+
+<%= link_to "News", :controller => 'news', :action => 'index' %>
+<%= link_to "Event", :controller => 'events', :action => 'index' %>
+<%= link_to "Public", :controller => 'publics', :action => 'index' %>
+<%= link_to "Job", :controller => 'jobs', :action => 'index' %>
