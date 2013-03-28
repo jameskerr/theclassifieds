@@ -21,7 +21,7 @@ group :assets do
   gem 'commonjs'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   
-  gem 'therubyracer', :platforms => :ruby
+  gem "therubyracer", "~> 0.11.4"
 
   gem 'uglifier', '>= 1.0.3'
   gem 'less-rails'
