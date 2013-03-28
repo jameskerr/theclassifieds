@@ -5,7 +5,7 @@ gem 'rails', '3.2.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'sqlite3'ca
 
 gem 'json'
 
@@ -14,16 +14,16 @@ gem 'json'
 group :assets do
   # gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'less'
+  
   gem 'libv8'
   gem 'commonjs'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
-
+  group :development do
+    gem 'less'
+    gem 'therubyracer', :platforms => :ruby
+  end
   gem 'uglifier', '>= 1.0.3'
-  
   gem 'less-rails'
-  
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
   
   gem "bootstrap-wysihtml5-rails", "~> 0.3.1.17"
