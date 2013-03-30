@@ -25,7 +25,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'less-rails'
-  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem 'twitter-bootstrap-rails'
   
   gem "bootstrap-wysihtml5-rails", "~> 0.3.1.17"
 end
