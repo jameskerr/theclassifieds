@@ -20,11 +20,11 @@
       <tr>
         <td><%= link_to news.id, news_path(news) %></td>
         <td><%= news.title %></td>
-        <td><%= news.body %></td>
-        <td><%= news.image %></td>
+        <td><%= truncate(news.body) %></td>
+        <td><img src="<%= news.image.to_s %>" width="40"/></td>
         <td><%= news.archived %></td>
         <td><%= news.position %></td>
-        <td><%=l news.created_at %></td>
+        <td><%= news.created_at.strftime("%m/%d %I:%M%p")%></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_news_path(news), :class => 'btn btn-mini' %>

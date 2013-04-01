@@ -19,5 +19,9 @@ class BuildController < ApplicationController
   end
 
   def code
+    @news = News.all
+    @publics = Public.all
+    @events = Event.all
+    @jobs = Job.all
   end
 end

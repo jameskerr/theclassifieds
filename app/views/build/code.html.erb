@@ -1,2 +1,226 @@
-<h1>Build#code</h1>
-<p>Find me in app/views/build/code.html.erb</p>
+&#60html lang="en"&#62
+  &#60head&#62
+    &#60meta content="text/html; charset=utf-8" http-equiv="Content-Type" /&#62
+
+&#60style type="text/css"&#62
+a:hover { text-decoration: none !important; }
+&#60/style&#62
+&#60/head&#62
+  &#60body bgcolor="#e8e4ce" style="text-align: left; padding: 0; margin: 0; background: #e8e4ce url('https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_email.png');"&#62
+	&#60table cellspacing="0" border="0" align="center" bgcolor="#e8e4ce" style="background: #e8e4ce url('https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_email.png');" width="100%" cellpadding="0"&#62
+		&#60tr&#62
+			&#60td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif;"&#62
+
+				&#60table cellspacing="0" border="0" cellpadding="0" width="600"&#62
+					&#60tr&#62
+						&#60td align="left" style="padding: 0 0 16px; font-family: Helvetica, Arial, sans-serif;"&#62
+
+							&#60table class="unsubscribe" cellspacing="0" border="0" align="left" cellpadding="0" width="600"&#62
+								&#60tr&#62
+									&#60td align="center" style="padding: 5px 0; font-family: Helvetica, Arial, sans-serif;"&#62
+										&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/CSO_lawC_White_medium.png" style="float:center; padding:0 0 0 0; display: block;"/&#62
+										
+									&#60/td&#62
+								&#60/tr&#62
+							&#60/table&#62  &#60!-- unsubscribe --&#62
+
+						&#60/td&#62
+					&#60/tr&#62
+					&#60tr&#62
+						&#60td align="left" style="padding: 0 0 20px; font-family: Helvetica, Arial, sans-serif;"&#62
+							&#60table class="header" cellspacing="0" border="0" align="left" cellpadding="0" width="600"&#62
+								&#60tr&#62
+									&#60td style="font-family: Helvetica, Arial, sans-serif;"&#62&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header_top.jpg" alt="divider" style="display: block;" /&#62&#60/td&#62
+								&#60/tr&#62
+								&#60tr&#62
+									&#60td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;"&#62
+										&#60table width="600px" cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(images/bg_header.png);"&#62
+											&#60tr&#62
+												&#60td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Georgia, Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);"&#62
+													&#60h1 style="text-align:left; font-weight: bold; padding: 0; font-size: 60px; line-height: 45px; color: #ffe3a9; margin: 10px 0 0;"&#62&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/Chapman_Logo.png"&#62 The Classifieds&#60/h1&#62
+													&#60h3 style="text-align: center; font-weight: normal; padding: 6px 0 0 0; font-size: 16px; line-height: 20px; color: #f9e9c1; margin: 6px 0 0;"&#62&#60em&#62Everything you need to know from the CSO&#60/em&#62&#60/h3&#62
+												&#60/td&#62
+											&#60/tr&#62
+											&#60tr&#62
+												&#60td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);"&#62
+													&#60table cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" cellpadding="0"&#62
+														&#60tr&#62
+															&#60td valign="top" bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);"&#62
+																
+															&#60/td&#62
+															&#60td bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="4px"&#62&nbsp;&#60/td&#62
+															&#60td valign="top" bgcolor="#2d807c" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="400"&#62
+																&#60p style="padding: 0; font-size: 13px; line-height: 16px; color: #f9e9c1; margin: 0 0 10px;"&#62&#60strong&#62In This Issue&#60/strong&#62&#60/p&#62
+																&#60ul style="padding: 0; border-bottom: 1px solid #6ba5a2; margin: 0; list-style:none; list-style-position:outside;"&#62
+																	<% @news.each do |n| %>
+																	&#60li style="font-size: 13px; line-height: 15px; color: #fff; list-style-type: none; border-top: 1px solid #6ba5a2; margin: 0; padding: 4px 0;"&#62<%= n.title %>&#60/li&#62
+																	<% end %>
+																&#60/ul&#62
+															&#60/td&#62
+															&#60td bgcolor="#2d807c" style="verticle-align:text-top; text-align: center; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="192px"&#62
+																&#60p style="padding: 0; font-size: 20px; line-height: 20px; color: #f9e9c1; "&#62&#60strong&#62Hi [fname]!&#60/strong&#62&#60/p&#62
+															&#60/td&#62
+														&#60/tr&#62
+													&#60/table&#62  
+												&#60/td&#62
+											&#60/tr&#62
+										&#60/table&#62
+									&#60/td&#62
+								&#60/tr&#62
+							&#60/table&#62  &#60!-- header --&#62
+						&#60/td&#62
+					&#60/tr&#62
+					
+					&#60tr&#62
+						&#60td align="left" valign="top" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif;"&#62
+							&#60table cellspacing="0" border="0" align="left" cellpadding="0" width="600"&#62
+								
+								&#60tr&#62
+									
+									&#60td valign="top" style="font-family: Helvetica, Arial, sans-serif;" width="364"&#62
+										
+										&#60table cellspacing="0" border="0" cellpadding="0"&#62
+											<% @news.each do |n| %>
+											&#60tr&#62
+												&#60td style="font-family: Helvetica, Arial, sans-serif;"&#62                          
+													&#60table class="content-item" cellspacing="0" border="0" bgcolor="#fff" style="background: #fff; border: 1px solid #bddacb; margin:4px 0px" cellpadding="0" width="364"&#62
+														&#60tr&#62
+															&#60td bgcolor="#fff" style="padding: 10px 10px 0; font-family: Helvetica, Arial, sans-serif; background: #fff;"&#62
+																&#60h2 style="padding: 6px 10px; background: #9ebbb0; font-weight: bold; font-size: 14px; line-height: 16px; margin: 0; color: #fdfdfd;"&#62&#60a name="<%=n.title%>" /&#62<%= n.title %>&#60/h2&#62
+															&#60/td&#62
+														&#60/tr&#62
+														&#60tr&#62
+															&#60td valign="top" bgcolor="#fff" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #fff;"&#62
+																
+																&#60img src="<%= n.image %>" width="345" alt="" style="display: block; margin: 0 auto" /&#62
+																
+															&#60/td&#62
+														&#60/tr&#62
+														&#60tr&#62
+															&#60td valign="top" bgcolor="#fff" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #fff;"&#62
+																<%= n.body %>
+																&#60br /&#62
+															&#60/td&#62
+														&#60/tr&#62
+													&#60/table&#62
+												&#60/td&#62
+											&#60/tr&#62
+
+											<% end %>
+										&#60/table&#62	
+									&#60/td&#62
+									
+									
+									
+									&#60!-- SIDEBAR BEGIN --&#62
+									
+									&#60td style="font-family: Helvetica, Arial, sans-serif;" width=""&#62&nbsp;&#60/td&#62
+									&#60td valign="top" bgcolor="#fff" style="font-family: Helvetica, Arial, sans-serif; background: #fff; border-right: 1px solid #bddacb; border-left: 1px solid #bddacb;" width="214"&#62
+										&#60table class="sidebar" cellspacing="0" border="0" cellpadding="0" width="214"&#62
+											&#60tr&#62
+												&#60td height="10" style="font-family: Helvetica, Arial, sans-serif;"&#62&nbsp;&#60/td&#62
+											&#60/tr&#62
+											&#60tr&#62
+												&#60td bgcolor="#476580" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #476580; background: #476580;"&#62
+													&#60h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;"&#62TIP OF THE WEEK&#60/h4&#62
+												&#60/td&#62
+											&#60/tr&#62
+											&#60tr&#62
+												&#60td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; "&#62
+													&#60p style="font-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin:0 "&#62This is where the tip goes.&#60/p&#62
+												&#60/td&#62
+											&#60/tr&#62
+											&#60tr&#62
+												&#60td bgcolor="#1b4a15" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #1b4a15; background: #1b4a15;"&#62
+													&#60h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;"&#62JOB OPENINGS&#60/h4&#62
+												&#60/td&#62
+											&#60/tr&#62
+											
+											&#60tr&#62
+												&#60td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; "&#62
+													<% @jobs.each do |j| %>
+													&#60p style="padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 14px;"&#62
+													&#60b&#62&#60a href="<%= j.link %>" title="Click here to apply on Symplicity" style="text-decoration:underline; color: #4a6a86;"&#62<%= j.title %>&#60/a&#62&#60/b&#62									                      &#60br /&#62
+													<%= j.employer %>&#60br /&#62
+													&#60em&#62<%= j.practice_area %>&#60/em&#62&#60br /&#62
+													&#60/p&#62
+													<% end %>
+												&#60/td&#62
+											&#60/tr&#62
+											
+											&#60tr&#62
+												&#60td bgcolor="#DCA400;" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #DCA400; background: #DCA400;"&#62
+													&#60h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;"&#62UPCOMING EVENTS&#60/h4&#62
+												&#60/td&#62
+											&#60/tr&#62
+											
+											&#60tr&#62
+												&#60td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; "&#62
+													<% @events.each do |event| %>
+													&#60p style="padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 14px;"&#62
+														<%= event.title %>&#60br /&#62&#60em&#62<%= event.date.strftime("%a. %m/%d - %I:%M%p") %>&#60/em&#62&#60br /&#62&#60a style="text-decoration:underline; color: #4a6a86;" href="<%= event.link %>"&#62&#60strong&#62RSVP&#60/strong&#62&#60/a&#62
+													&#60/p&#62
+													<% end %>
+												&#60/td&#62
+											&#60/tr&#62
+										
+											&#60tr&#62
+												&#60td bgcolor="#B5042E;" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #B5042E; background: #B5042E;"&#62
+													&#60h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;"&#62PUBLIC INTEREST NEWS&#60/h4&#62
+												&#60/td&#62
+											&#60/tr&#62
+											
+											&#60tr&#62
+												&#60td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; "&#62
+													<% @publics.each do |n| %>
+													&#60p style="padding: 0; font-size: 13px; line-height: 16px; color: #4A6A86; margin: 0;"&#62
+														&#60strong&#62<%= n.title %>&#60/strong&#62&#60/p&#62<%=n.body%>
+														&#60br /&#62 &#60br /&#62
+													<% end %>
+												&#60/td&#62
+											&#60/tr&#62
+										&#60/table&#62
+									&#60/td&#62
+								&#60/tr&#62
+							&#60/table&#62  
+						&#60/td&#62
+					&#60/tr&#62
+					
+					&#60tr&#62
+						&#60td align="left" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif;"&#62
+							&#60table class="footer" cellspacing="0" border="0" align="left" bgcolor="#5b9b83" style="background: #5b9b83 url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_footer.png);" cellpadding="10 0" width="600"&#62
+								&#60tr&#62
+									&#60td bgcolor="#1b4a15" style="font-family: Helvetica, Arial, sans-serif; background: #1b4a15;"&#62
+										&#60h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;"&#62NEED HELP? &nbsp;&nbsp;&nbsp;&nbsp;HAVE QUESTIONS? &nbsp;&nbsp;&nbsp;&nbsp;&#60a style="color:#fff; text-decoration:none;" href="http://www.chapman.edu/law/careers/contact-us.aspx"&#62CONTACT US&#60/a&#62&#60/h4&#62
+									&#60/td&#62
+								&#60/tr&#62
+								&#60tr&#62
+									&#60table bgcolor="#5b9b83" style="font-family: Helvetica, Arial, sans-serif; background: #5b9b83 url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_footer.png);"&#62
+									&#60tr height="80"&#62
+										&#60td width="300"&#62
+											&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/CSO_lawH_White360.png" style="padding:0; display: block; margin-left: 20px;" /&#62
+										&#60/td&#62
+										&#60td width="300"&#62
+											&#60ul style="margin:0 20px 0 0; padding:0; list-style:none; text-align: right;"&#62
+												&#60li style="font-size:12px; margin:0; color: #fff;"&#62&#60a style="font-size:12px; margin:0; color: #fff;" href="http://www.chapman.edu/law/careers/contact-us.aspx"&#62Contact Us&#60/a&#62&#60/li&#62	
+												&#60li style="font-size:12px; margin:0; color: #fff;"&#62&#60a href="https://twitter.com/chapmanlawcso"&#62&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/twitter25.png" width="25" height="25" style="margin-left:10px"&#62&#60/a&#62&#60a href="http://www.facebook.com/ChapmanLawSchool"&#62&#60img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/facebook25.png" style="margin-left:10px" width="25" height="25"&#62&#60/a&#62&#60/li&#62
+											&#60/ul&#62
+										&#60/td&#62
+									&#60/tr&#62
+									&#60/table&#62				
+								&#60/tr&#62
+							&#60/table&#62      		  	  
+						&#60/td&#62
+					&#60/tr&#62
+					
+					
+				&#60/table&#62
+			&#60/td&#62
+		&#60/tr&#62	
+	&#60/table&#62
+		
+		&#60!-- Footer --&#62
+		
+
+  &#60/body&#62
+&#60/html&#62

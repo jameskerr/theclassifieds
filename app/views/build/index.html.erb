@@ -1,33 +1,250 @@
-<h1>News</h1>
-<% @news.each do |news| %>
-<h2><%= news.title %></h2>
-<p><%= news.body %></p>
-<%= image_tag news.image_url.to_s %>
-<hr>
-<% end %>
-<h1>Events</h1>
-<% @events.each do |event| %>
-<h2><%= event.title %></h2>
-<p><%= event.date %></p>
-<% end %>
-<hr>
+<%= link_to "View Code", {:action => 'code'} %> 
 
-<h1>Jobs</h1>
-<% @jobs.each do |job| %>
-<h2><%= job.title %></h2>
-<p>
-	<%= job.employer %><br>
-	<%= job.practice_area %>
-</p>
-<hr>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 
-<% end %>
-<h1>Public Interest News</h1>
-<% @publics.each do |public| %>
-<h2><%= public.title %></h2>
-<p><%= public.body %></p>
-<hr>
-<% end %>
+<style type="text/css">
+a:hover { text-decoration: none !important; }
+</style>
+</head>
+  <body bgcolor="#e8e4ce" style="text-align: left; padding: 0; margin: 0; background: #e8e4ce url('https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_email.png');">
+	<table cellspacing="0" border="0" align="center" bgcolor="#e8e4ce" style="background: #e8e4ce url('https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_email.png');" width="100%" cellpadding="0">
+		<tr>
+			<td align="center" valign="top" style="font-family: Helvetica, Arial, sans-serif;">
+
+				<table cellspacing="0" border="0" cellpadding="0" width="600">
+					<tr>
+						<td align="left" style="padding: 0 0 16px; font-family: Helvetica, Arial, sans-serif;">
+
+							<table class="unsubscribe" cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								<tr>
+									<td align="center" style="padding: 5px 0; font-family: Helvetica, Arial, sans-serif;">
+										<img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/CSO_lawC_White_medium.png" style="float:center; padding:0 0 0 0; display: block;"/>
+										
+									</td>
+								</tr>
+							</table>  <!-- unsubscribe -->
+
+						</td>
+					</tr>
+					<tr>
+						<td align="left" style="padding: 0 0 20px; font-family: Helvetica, Arial, sans-serif;">
+							<table class="header" cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								<tr>
+									<td style="font-family: Helvetica, Arial, sans-serif;"><img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header_top.jpg" alt="divider" style="display: block;" /></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;">
+										<table width="600px" cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(images/bg_header.png);">
+											<tr>
+												<td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Georgia, Helvetica, Arial, sans-serif; background: #2d807c url(images/bg_header.png);">
+													<h1 style="text-align:left; font-weight: bold; padding: 0; font-size: 60px; line-height: 45px; color: #ffe3a9; margin: 10px 0 0;"><img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/Chapman_Logo.png"> The Classifieds</h1>
+													<h3 style="text-align: center; font-weight: normal; padding: 6px 0 0 0; font-size: 16px; line-height: 20px; color: #f9e9c1; margin: 6px 0 0;"><em>Everything you need to know from the CSO</em></h3>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top" bgcolor="#2d807c" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);">
+													<table cellspacing="0" border="0" align="left" bgcolor="#2d807c" style="background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" cellpadding="0">
+														<tr>
+															<td valign="top" bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);">
+																
+															</td>
+															<td bgcolor="#2d807c" style="font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="4px">&nbsp;</td>
+															<td valign="top" bgcolor="#2d807c" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="400">
+																<p style="padding: 0; font-size: 13px; line-height: 16px; color: #f9e9c1; margin: 0 0 10px;"><strong>In This Issue</strong></p>
+																<ul style="padding: 0; border-bottom: 1px solid #6ba5a2; margin: 0; list-style:none; list-style-position:outside;">
+																	<% @news.each do |n| %>
+																	<li style="font-size: 13px; line-height: 15px; color: #fff; list-style-type: none; border-top: 1px solid #6ba5a2; margin: 0; padding: 4px 0;"><%= n.title %></li>
+																	<% end %>
+																</ul>
+															</td>
+															<td bgcolor="#2d807c" style="verticle-align:text-top; text-align: center; font-family: Helvetica, Arial, sans-serif; background: #2d807c url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_header.png);" width="192px">
+																<p style="padding: 0; font-size: 20px; line-height: 20px; color: #f9e9c1; "><strong>Hi [fname]!</strong></p>
+															</td>
+														</tr>
+													</table>  
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>  <!-- header -->
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="left" valign="top" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif;">
+							<table cellspacing="0" border="0" align="left" cellpadding="0" width="600">
+								
+								<tr>
+									
+									<td valign="top" style="font-family: Helvetica, Arial, sans-serif;" width="364">
+										
+										<table cellspacing="0" border="0" cellpadding="0">
+											<% @news.each do |n| %>
+											<tr>
+												<td style="font-family: Helvetica, Arial, sans-serif;">                          
+													<table class="content-item" cellspacing="0" border="0" bgcolor="#fff" style="background: #fff; border: 1px solid #bddacb; margin:4px 0px" cellpadding="0" width="364">
+														<tr>
+															<td bgcolor="#fff" style="padding: 10px 10px 0; font-family: Helvetica, Arial, sans-serif; background: #fff;">
+																<h2 style="padding: 6px 10px; background: #9ebbb0; font-weight: bold; font-size: 14px; line-height: 16px; margin: 0; color: #fdfdfd;"><a name="<%=n.title%>" /><%= n.title %><%= link_to t('X'),
+											                      news_path(n),
+											                      :method => :delete,
+											                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+											                      :style => 'float:right; text-decoration:none;' %>
+											
+											</h2>
+															</td>
+														</tr>
+														<tr>
+															<td valign="top" bgcolor="#fff" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #fff;">
+																
+																<img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/<%= n.symplicity_name %>" width="345" alt="" style="display: block; margin: 0 auto" />
+																
+															</td>
+														</tr>
+														<tr>
+															<td valign="top" bgcolor="#fff" style="padding: 10px; font-family: Helvetica, Arial, sans-serif; background: #fff;">
+																<%= n.body %>
+																<%= link_to("edit", edit_news_path(n), :style => 'float:right') %>
+																<br />
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+											<% end %>
+										</table>	
+									</td>
+									
+									
+									
+									<!-- SIDEBAR BEGIN -->
+									
+									<td style="font-family: Helvetica, Arial, sans-serif;" width="">&nbsp;</td>
+									<td valign="top" bgcolor="#fff" style="font-family: Helvetica, Arial, sans-serif; background: #fff; border-right: 1px solid #bddacb; border-left: 1px solid #bddacb;" width="214">
+										<table class="sidebar" cellspacing="0" border="0" cellpadding="0" width="214">
+											<tr>
+												<td height="10" style="font-family: Helvetica, Arial, sans-serif;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td bgcolor="#476580" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #476580; background: #476580;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">TIP OF THE WEEK</h4>
+												</td>
+											</tr>
+											<tr>
+												<td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; ">
+													<p style="font-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin:0 ">This is where the tip goes.</p>
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#1b4a15" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #1b4a15; background: #1b4a15;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">JOB OPENINGS</h4>
+												</td>
+											</tr>
+											
+											<tr>
+												<td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; ">
+													<% @jobs.each do |j| %>
+													<p style="padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 14px;">
+													<b><a href="<%= j.link %>" title="Click here to apply on Symplicity" style="text-decoration:underline; color: #4a6a86;"><%= j.title %></a></b><%= link_to t('X'),
+									                      job_path(j),
+									                      :method => :delete,
+									                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+									                      :style => 'float:right; text-decoration:none;' %><br />
+													<%= j.employer %><br />
+													<em><%= j.practice_area %></em><%= link_to('Edit', edit_job_path(j), :style => 'float:right') %><br />
+													</p>
+													<% end %>
+												</td>
+											</tr>
+											
+											<tr>
+												<td bgcolor="#DCA400;" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #DCA400; background: #DCA400;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">UPCOMING EVENTS</h4>
+												</td>
+											</tr>
+											
+											<tr>
+												<td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; ">
+													<% @events.each do |event| %>
+													<p style="padding: 0; font-size: 13px; line-height: 16px; color: #4a6a86; margin: 0 0 14px;">
+														<%= event.title %><%= link_to t('X'),
+									                      event_path(event),
+									                      :method => :delete,
+									                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+									                      :style => 'float:right; text-decoration:none;' %><br /><em><%= event.date.strftime("%a. %m/%d - %I:%M%p") %></em><br /><a style="text-decoration:underline; color: #4a6a86;" href="<%= event.link %>"><strong>RSVP</strong></a><%= link_to('Edit', edit_event_path(event), :style => 'float:right') %>
+													</p>
+													<% end %>
+												</td>
+											</tr>
+										
+											<tr>
+												<td bgcolor="#B5042E;" style="font-family: Helvetica, Arial, sans-serif; padding: 5px 14px; border: 1px solid #B5042E; background: #B5042E;">
+													<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">PUBLIC INTEREST NEWS</h4>
+												</td>
+											</tr>
+											
+											<tr>
+												<td style=" padding: 20px 14px 30px; font-family: Helvetica, Arial, sans-serif; ">
+													<% @publics.each do |n| %>
+													<p style="padding: 0; font-size: 13px; line-height: 16px; color: #4A6A86; margin: 0 0 14px;">
+														<strong><%= n.title %></strong><%= link_to t('X'),
+									                      public_path(n),
+									                      :method => :delete,
+									                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+									                      :style => 'float:right; text-decoration:none;' %></p><%=n.body%>
+														<%= link_to('Edit', edit_public_path(n), :style => 'float:right') %><br /> <br />
+													<% end %>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>  
+						</td>
+					</tr>
+					
+					<tr>
+						<td align="left" style="padding: 0 0 10px; font-family: Helvetica, Arial, sans-serif;">
+							<table class="footer" cellspacing="0" border="0" align="left" bgcolor="#5b9b83" style="background: #5b9b83 url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_footer.png);" cellpadding="10 0" width="600">
+								<tr>
+									<td bgcolor="#1b4a15" style="font-family: Helvetica, Arial, sans-serif; background: #1b4a15;">
+										<h4 style="padding: 0; font-size: 13px; line-height: 14px; color: #fff; margin: 0;">NEED HELP? &nbsp;&nbsp;&nbsp;&nbsp;HAVE QUESTIONS? &nbsp;&nbsp;&nbsp;&nbsp;<a style="color:#fff; text-decoration:none;" href="http://www.chapman.edu/law/careers/contact-us.aspx">CONTACT US</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<table bgcolor="#5b9b83" style="font-family: Helvetica, Arial, sans-serif; background: #5b9b83 url(https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/bg_footer.png);">
+									<tr height="80">
+										<td width="300">
+											<img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/CSO_lawH_White360.png" style="padding:0; display: block; margin-left: 20px;" />
+										</td>
+										<td width="300">
+											<ul style="margin:0 20px 0 0; padding:0; list-style:none; text-align: right;">
+												<li style="font-size:12px; margin:0; color: #fff;"><a style="font-size:12px; margin:0; color: #fff;" href="http://www.chapman.edu/law/careers/contact-us.aspx">Contact Us</a></li>	
+												<li style="font-size:12px; margin:0; color: #fff;"><a href="https://twitter.com/chapmanlawcso"><img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/twitter25.png" width="25" height="25" style="margin-left:10px"></a><a href="http://www.facebook.com/ChapmanLawSchool"><img src="https://law-chapman-csm.symplicity.com/tinyfiles/classifieds/facebook25.png" style="margin-left:10px" width="25" height="25"></a></li>
+											</ul>
+										</td>
+									</tr>
+									</table>				
+								</tr>
+							</table>      		  	  
+						</td>
+					</tr>
+					
+					
+				</table>
+			</td>
+		</tr>	
+	</table>
+		
+		<!-- Footer -->
+		
+
+  </body>
+</html>
 
 <%= link_to "News", :controller => 'news', :action => 'index' %>
 <%= link_to "Event", :controller => 'events', :action => 'index' %>
