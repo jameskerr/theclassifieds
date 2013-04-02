@@ -103,7 +103,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.0.3)
+    rake (10.0.4)
     rdoc (3.12)
       json (~> 1.4)
     ref (1.0.4)
@@ -134,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-wysihtml5-rails (~> 0.3.1.17)
+  bundler
   capistrano
   carrierwave
   coffee-rails (~> 3.2.1)

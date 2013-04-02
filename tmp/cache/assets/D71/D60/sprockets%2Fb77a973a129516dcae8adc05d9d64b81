@@ -1,5 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@value"ÞT{"lengthi&S"pathname"}/Library/Ruby/Gems/1.8/gems/bootstrap-wysihtml5-rails-0.3.1.17/vendor/assets/javascripts/bootstrap-wysihtml5/core.js.erb"
-class"BundledAsset"_version"%9f3b95dd7ea3030dc35985c0a8020862"content_type"application/javascript"source"&S!function($, wysi) {
+o: ActiveSupport::Cache::Entry	:@value"ÞT{"source"&S!function($, wysi) {
     "use strict";
 
     var tpl = {
@@ -491,5 +490,6 @@ class"BundledAsset"_version"%9f3b95dd7ea3030dc35985c0a8020862"content_type"a
     };
 
 }(window.jQuery, window.wysihtml5);
-"
-mtime"2013-01-28T18:39:35-08:00"required_assets_digest"%93d1e8217f56956e990f00e9011c24d6"logical_path" bootstrap-wysihtml5/core.js"digest"%8c794cca63399fb7e10e9415869fdacb:@expires_in0:@compressedF:@created_atf1364636906.960151 s
+"digest"%8c794cca63399fb7e10e9415869fdacb"
+class"BundledAsset"content_type"application/javascript"_version"%9f3b95dd7ea3030dc35985c0a8020862"required_assets_digest"%93d1e8217f56956e990f00e9011c24d6"lengthi&S"
+mtime"2013-01-28T18:39:35-08:00"pathname"}/Library/Ruby/Gems/1.8/gems/bootstrap-wysihtml5-rails-0.3.1.17/vendor/assets/javascripts/bootstrap-wysihtml5/core.js.erb"logical_path" bootstrap-wysihtml5/core.js:@expires_in0:@compressedF:@created_atf1364883381.960362 v’
