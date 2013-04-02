@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, "theclassifieds"
 set :repository,  "git@github.com:jkerr838/theclassifieds"
 
